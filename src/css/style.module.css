@@ -1,0 +1,7 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7ecf2;
+  padding-top: 30px;
+}

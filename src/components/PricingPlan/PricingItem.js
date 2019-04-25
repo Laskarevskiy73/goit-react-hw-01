@@ -5,7 +5,7 @@ const PricingItem = ({
   item: { icon, label, capacity, description, price }
 }) => (
   <div>
-    <i src={icon}>
+    <i>
       <img src={icon} alt="icon" />
     </i>
     <h2>{label}</h2>

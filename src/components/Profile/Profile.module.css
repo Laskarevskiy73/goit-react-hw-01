@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+
+.profile {
+  width: 250px;
+  background-color: #f3f6f9;
+  border: 1px solid #e4e9f0;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 30px;
+  box-shadow: 10px 15px 26px -10px rgba(0, 0, 0, 0.75);
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding-top: 30px;
+}
+
+.avatar {
+  width: 90px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tag {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #768696;
+}
+
+.location {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #768696;
+  margin-bottom: 33px;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+}
+.stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #e4e9f0;
+  padding-right: 20px;
+}
+
+.stats li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #768696;
+}
+
+.quantity {
+  font-size: 14px;
+  font-weight: 900;
+  color: #1f3349;
+  padding-top: 9px;
+}
