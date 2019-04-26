@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald: 300, 400");
+
+.pricingPlan {
+  display: flex;
+  list-style: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+
+.item {
+  background-color: #fff;
+  margin-right: 20px;
+  border-radius: 2px;
+  box-shadow: 10px 15px 26px -10px rgba(0, 0, 0, 0.75);
+}
+
+.item:nth-child(3) {
+  margin-right: 0;
+}
+
+.pricingItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  padding: 0px 15px;
+}
+
+.icon {
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+  margin-bottom: 35px;
+}
+
+.iconImg {
+  width: 150px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #dda431;
+}
+
+.capacity {
+  font-size: 17px;
+  color: #b4b4b4;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.description {
+  color: #b4b4b4;
+  padding: 0 30px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.price {
+  color: #7f8c8d;
+  font-size: 32px;
+  margin-top: 0;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.button {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 18px 60px;
+  margin-bottom: 50px;
+  background-color: #dda431;
+}

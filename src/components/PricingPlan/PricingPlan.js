@@ -1,11 +1,12 @@
 import React from "react";
 import propTypes from "prop-types";
 import PricingItem from "./PricingItem";
+import style from "./PricingPlan.module.css";
 
 const PricingPlan = ({ items }) => (
-  <ul>
+  <ul className={style.pricingPlan}>
     {items.map(item => (
-      <li key={item.id}>
+      <li className={style.item} key={item.id}>
         <PricingItem item={item} />
       </li>
     ))}
