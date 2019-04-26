@@ -1,7 +1,7 @@
-import React from "react";
-import propTypes from "prop-types";
-import PricingItem from "./PricingItem";
-import style from "./PricingPlan.module.css";
+import React from 'react';
+import propTypes from 'prop-types';
+import PricingItem from './PricingItem';
+import style from './PricingPlan.module.css';
 
 const PricingPlan = ({ items }) => (
   <ul className={style.pricingPlan}>
@@ -14,6 +14,6 @@ const PricingPlan = ({ items }) => (
 );
 
 PricingPlan.propTypes = {
-  items: propTypes.array.isRequired
+  items: propTypes.shape().isRequired,
 };
 export default PricingPlan;

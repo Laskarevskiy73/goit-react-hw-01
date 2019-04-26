@@ -1,18 +1,18 @@
-import React from "react";
-import propTypes from "prop-types";
-import style from "./Profile.module.css";
+import React from 'react';
+import propTypes from 'prop-types';
+import style from './Profile.module.css';
 
 export const user = {
-  name: "Jacques Gluke",
-  tag: "@jgluke",
-  location: "Ocho Rios, Jamaica",
+  name: 'Jacques Gluke',
+  tag: '@jgluke',
+  location: 'Ocho Rios, Jamaica',
   avatar:
-    "http://okcolab.sasquatchstudio.co/wp-content/uploads/2017/05/avatar-sample.jpg",
+    'http://okcolab.sasquatchstudio.co/wp-content/uploads/2017/05/avatar-sample.jpg',
   stats: {
     followers: 5603,
     views: 4827,
-    likes: 1308
-  }
+    likes: 1308,
+  },
 };
 
 export const Profile = ({ user: { name, tag, location, avatar, stats } }) => (
@@ -40,6 +40,10 @@ export const Profile = ({ user: { name, tag, location, avatar, stats } }) => (
   </div>
 );
 
+Profile.defaultProps = {
+  user: {},
+};
+
 Profile.propTypes = {
   user: propTypes.shape({
     name: propTypes.string.isRequired,
@@ -49,7 +53,7 @@ Profile.propTypes = {
     stats: propTypes.shape({
       followers: propTypes.number,
       views: propTypes.number,
-      likes: propTypes.number
-    })
-  })
+      likes: propTypes.number,
+    }),
+  }),
 };
