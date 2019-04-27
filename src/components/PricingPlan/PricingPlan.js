@@ -14,6 +14,6 @@ const PricingPlan = ({ items }) => (
 );
 
 PricingPlan.propTypes = {
-  items: propTypes.shape().isRequired,
+  items: propTypes.arrayOf(propTypes.shape()).isRequired,
 };
 export default PricingPlan;

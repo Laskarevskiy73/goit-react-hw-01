@@ -7,7 +7,7 @@ export const user = {
   tag: '@jgluke',
   location: 'Ocho Rios, Jamaica',
   avatar:
-    'http://okcolab.sasquatchstudio.co/wp-content/uploads/2017/05/avatar-sample.jpg',
+    'https://okcolab.sasquatchstudio.co/wp-content/uploads/2017/05/avatar-sample.jpg',
   stats: {
     followers: 5603,
     views: 4827,
