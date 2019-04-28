@@ -2,20 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 import style from './Profile.module.css';
 
-export const user = {
-  name: 'Jacques Gluke',
-  tag: '@jgluke',
-  location: 'Ocho Rios, Jamaica',
-  avatar:
-    'https://okcolab.sasquatchstudio.co/wp-content/uploads/2017/05/avatar-sample.jpg',
-  stats: {
-    followers: 5603,
-    views: 4827,
-    likes: 1308,
-  },
-};
-
-export const Profile = ({ user: { name, tag, location, avatar, stats } }) => (
+const Profile = ({ user: { name, tag, location, avatar, stats } }) => (
   <div className={style.profile}>
     <div className={style.description}>
       <img className={style.avatar} src={avatar} alt="user avatar" />
@@ -51,9 +38,11 @@ Profile.propTypes = {
     location: propTypes.string.isRequired,
     avatar: propTypes.string.isRequired,
     stats: propTypes.shape({
-      followers: propTypes.number,
-      views: propTypes.number,
-      likes: propTypes.number,
+      followers: propTypes.number.isRequired,
+      views: propTypes.number.isRequired,
+      likes: propTypes.number.isRequired,
     }),
   }),
 };
+
+export default Profile;

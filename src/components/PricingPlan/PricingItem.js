@@ -2,11 +2,14 @@ import React from 'react';
 import propTypes from 'prop-types';
 import style from './PricingPlan.module.css';
 
-const PricingItem = ({
-  item: { icon, label, capacity, description, price },
-}) => (
+const PricingItem = ({ price, icon, label, capacity, description }) => (
   <div className={style.pricingItem}>
-    <i className={style.icon} style={{ backgroundImage: `src:${icon}` }} />
+    <i
+      className={style.icon}
+      style={{
+        backgroundImage: `url(${icon})`,
+      }}
+    />
     <h2 className={style.label}>{label}</h2>
     <p className={style.capacity}>{capacity} Storage</p>
     <p className={style.description}>{description}</p>
@@ -17,18 +20,12 @@ const PricingItem = ({
   </div>
 );
 
-PricingItem.defaultProps = {
-  item: [],
-};
-
 PricingItem.propTypes = {
-  item: propTypes.shape({
-    icon: propTypes.string.isRequired,
-    label: propTypes.string.isRequired,
-    capacity: propTypes.string.isRequired,
-    description: propTypes.string.isRequired,
-    price: propTypes.number.isRequired,
-  }),
+  icon: propTypes.string.isRequired,
+  label: propTypes.string.isRequired,
+  capacity: propTypes.string.isRequired,
+  description: propTypes.string.isRequired,
+  price: propTypes.number.isRequired,
 };
 
 export default PricingItem;

@@ -2,7 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 import style from './Stats.module.css';
 
-export const Stats = ({ title = '', stats }) => (
+const Stats = ({ title = '', stats }) => (
   <section className={style.statsSection}>
     {title !== '' && <h2 className={style.title}>{title}</h2>}
     <ul className={style.statList}>
@@ -16,14 +16,6 @@ export const Stats = ({ title = '', stats }) => (
   </section>
 );
 
-export const stats = [
-  { id: 'id-1', label: '.docx', percentage: 22 },
-  { id: 'id-2', label: '.pdf', percentage: 4 },
-  { id: 'id-3', label: '.mp3', percentage: 17 },
-  { id: 'id-4', label: '.psd', percentage: 47 },
-  { id: 'id-5', label: '.pdf', percentage: 10 },
-];
-
 Stats.defaultProps = {
   title: '',
   stats: [],
@@ -34,8 +26,10 @@ Stats.propTypes = {
   stats: propTypes.arrayOf(
     propTypes.shape({
       id: propTypes.string.isRequired,
-      label: propTypes.string,
-      percentage: propTypes.number,
+      label: propTypes.string.isRequired,
+      percentage: propTypes.number.isRequired,
     }),
   ),
 };
+
+export default Stats;
